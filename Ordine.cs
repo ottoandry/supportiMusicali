@@ -13,7 +13,7 @@ namespace NegozioMusicale
         public string MetodoPagamento { get; set; }
         public string IndirizzoSpedizione { get; set; }
         public string Stato { get; set; }
-        public int ClienteCodice { get; set; }
+        public Cliente Cliente { get; set; }
     }
 
 }

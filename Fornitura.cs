@@ -8,8 +8,8 @@ namespace NegozioMusicale
 {
     public class Fornitura
     {
-        public int FornitoreCodice { get; set; }
-        public int SupportoID { get; set; }
+        public Fornitore Fornitore { get; set; }
+        public SupportoMusicale Supporto { get; set; }
         public int Quantita { get; set; }
         public decimal CostoAcquisto { get; set; }
     }

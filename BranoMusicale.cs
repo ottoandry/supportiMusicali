@@ -12,7 +12,7 @@ namespace NegozioMusicale
         public string Titolo { get; set; }
         public string Genere { get; set; }
         public TimeSpan Durata { get; set; }
-        public int SupportoID { get; set; }
+        public SupportoMusicale Supporto { get; set; }
     }
 
 }

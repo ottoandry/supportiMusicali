@@ -20,7 +20,7 @@ class Program
                 Titolo = "Hey Jude",
                 Genere = "Rock",
                 Durata = TimeSpan.FromMinutes(7),
-                SupportoID = 1
+                Supporto = cd
             },
             new BranoMusicale
             {
@@ -28,7 +28,7 @@ class Program
                 Titolo = "Let It Be",
                 Genere = "Rock",
                 Durata = TimeSpan.FromMinutes(4),
-                SupportoID = 1
+                Supporto = cd
             },
             new BranoMusicale
             {
@@ -36,7 +36,7 @@ class Program
                 Titolo = "Twist and Shout",
                 Genere = "Rock",
                 Durata = TimeSpan.FromMinutes(2),
-                SupportoID = 1
+                Supporto = cd
             }
         };
 
@@ -49,7 +49,7 @@ class Program
 
         SupportoArtista supportoArtista = new SupportoArtista
         {
-            SupportoID = 1,
+            Supporto = cd,
             ArtistaNomeArte = "The Beatles"
         };
 
@@ -70,7 +70,7 @@ class Program
             MetodoPagamento = "Carta di credito",
             IndirizzoSpedizione = "Viale Aldo Moro, Bari",
             Stato = "Elaborazione",
-            ClienteCodice = 1001
+            Cliente = cliente
         };
 
         Fornitore emi = new Fornitore
@@ -83,8 +83,8 @@ class Program
 
         Fornitura fornitura = new Fornitura
         {
-            FornitoreCodice = 2001,
-            SupportoID = 1,
+            Fornitore = emi,
+            Supporto = cd,
             Quantita = 100,
             CostoAcquisto = 10.50m
         };
